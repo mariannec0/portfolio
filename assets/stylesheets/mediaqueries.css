@@ -59,6 +59,7 @@
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
+    grid-template-columns: 1fr;
   }
   .contact-info-container {
     margin: 0;
@@ -91,5 +92,9 @@
   }
   .text-container {
     text-align: justify;
+  }
+  .skills-container {
+    justify-content: center;
+    gap: 1rem;
   }
 }
