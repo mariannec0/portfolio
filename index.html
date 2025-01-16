@@ -7,6 +7,8 @@
   <title>Marianne's Portfolio</title>
   <link rel="stylesheet" href="/assets/stylesheets/style.css">
   <link rel="stylesheet" href="/assets/stylesheets/mediaqueries.css">
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -37,71 +39,111 @@
       </div>
     </div>
   </nav>
+  <!-- Hero section-->
   <section id="hero">
     <div class="section__pic-container">
-      <img src="/assets/images/ash-pp.png" alt="Marianne's profile picture">
+      <img src="/assets/images/profile.jpg" alt="Marianne's profile picture" class="profile-pic">
     </div>
     <div class="section__text">
       <p class="section__text__p1">Hello, I'm</p>
       <h1 class="title">Marianne Cooper</h1>
-      <p class="section__text__p2">Developer</p>
+      <p class="section__text__p2">Web Developer</p>
       <div class="btn-container">
-        <button class="btn btn-color-2"
-        onclick="window.open('')">Download CV
+        <button
+          class="btn btn-color-2"
+          onclick="window.open('/assets/Marianne-Cooper-CV.pdf')">Download CV
         </button>
-        <button class="btn btn-color-1"
-        onclick="location.href='./#contact'">Contact Info
+        <button
+          class="btn btn-color-1"
+          onclick="location.href='./#contact'">Contact Info
         </button>
       </div>
       <div id="socials-container">
         <img
-        src="/assets/images/linkedin.png"
-        alt="My LinkedIn profile."
-        class="icon"
-        onclick="location.href='https://linkedin.com/in/marianne-s-cooper'">
+          src="/assets/images/linkedin.png"
+          alt="My LinkedIn profile."
+          class="icon"
+          onclick="location.href='https://linkedin.com/in/marianne-s-cooper'"
+        >
         <img
-        src="/assets/images/github.png"
-        alt="My GitHub profile."
-        class="icon"
-        onclick="location.href='https://github.com/mariannec0'">
+          src="/assets/images/github.png"
+          alt="My GitHub profile."
+          class="icon"
+          onclick="location.href='https://github.com/mariannec0'"
+        >
       </div>
     </div>
   </section>
+  <!-- About section -->
   <section id="about">
     <p class="section__text__p1">Get To Know More</p>
     <h1 class="title">About Me</h1>
     <div class="section-container">
-      <div class="section__pic-container">
+      <!-- <div class="section__pic-container">
         <img
         src=""
         alt="Profile picture"
         class="about-pic">
-      </div>
+      </div> -->
       <div class="about-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <img src="/assets/images/experience.png" alt="Experience icon"
-            class="icon">
+            <i class="fa-solid fa-award"></i>
             <h3>Experience</h3>
-            <p>Le Wagon <br> Web Development Bootcamp</p>
+            <p>Retail: Under Armour, Superdry</p>
+            <p>Hospitality: Dixie Browns</p>
           </div>
           <div class="details-container">
-            <img src="/assets/images/education.png" alt="education icon"
-            class="icon">
+            <i class="fa-solid fa-user-graduate"></i>
             <h3>Education</h3>
             <p>B.Sc. Computer Science</p>
+            <p>Le Wagon Web Development Bootcamp</p>
           </div>
         </div>
         <div class="text-container">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo dolor rerum, aspernatur vero architecto tenetur, quis veniam neque doloribus, voluptatum placeat quos ipsa in error ullam nemo aut numquam labore.</p>
+          <p>I’m a passionate web developer with a background in retail and a strong drive to create innovative, next-level websites. While working in fast-paced environments, I honed my communication, teamwork, and organizational skills, which now complement my technical expertise. Driven by a growing interest in tech, I began pursuing a BSc in Computer Science. Recognizing my true passion for development, I made the bold decision to quit my job and fully immerse myself in the Le Wagon bootcamp, where I built a solid foundation in web development.
+          <br>Since completing the bootcamp, I’ve been further developing my skills through Codecademy, where I’ve been focusing on a full-stack developer course to deepen my expertise and stay up-to-date with the latest technologies.
+          <br><br> I specialise in building responsive and user-friendly web applications using tools like Ruby on Rails, HTML, CSS, JavaScript, and Figma. I thrive on solving problems and continuously learning new technologies to enhance my craft.
+          <br><br> With a love of travel, I’ve lived in New Zealand and South Korea, where I immersed myself in new cultures and even self-taught how to speak and read Korean to a conversational level. Outside of coding, I love exploring new places and focusing on health and fitness.</p>
         </div>
       </div>
-      <img src="/assets/images/arrow.png"
-      alt="arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#projects'">
     </div>
   </section>
+  <!-- Skills section -->
+   <section id="skills-tools">
+    <h1 class="title">Skills</h1>
+    <div class="skills-container">
+      <img
+        src="/assets/images/html.png"
+        alt="html icon"
+        class="icon skills-icon">
+      <img
+        src="/assets/images/css.png"
+        alt="CSS icon"
+        class="icon skills-icon">
+      <img
+        src="/assets/images/ruby-on-rails.png"
+        alt="Ruby on rails icon"
+        class="icon skills-icon">
+      <img
+        src="/assets/images/js.png"
+        alt="Javascript icon"
+        class="icon skills-icon">
+      <img
+        src="/assets/images/vscode.png"
+        alt="Visual studio code icon"
+        class="icon skills-icon">
+      <img
+        src="/assets/images/figma.png"
+        alt="Figma icon"
+        class="icon skills-icon">
+      <img
+        src="/assets/images/github.png"
+        alt="Github icon"
+        class="icon skills-icon">
+    </div>
+   </section>
+  <!-- Project section -->
   <section id="projects">
     <p class="section__text__p1">Browse Recent</p>
     <h1 class="title">Projects</h1>
@@ -110,52 +152,112 @@
         <div class="details-container color-container">
           <div class="article-container">
             <img
-            src="/assets/images/project-1.png"
+            src="/assets/images/Blue.png"
             alt="Project 1"
             class="project-img">
           </div>
-          <h2 class="project-sub-title project-title">Project One</h2>
+          <h2 class="project-sub-title project-title">Bookflow</h2>
           <div class="btn-container">
             <button
             class="btn btn-color-2 project-btn"
-            onclick="location.href='github'">
+            onclick="window.open('https://github.com/idgamps99/bookflow.git', '_blank', 'noopener,noreferrer')">
             GitHub
             </button>
             <button
             class="btn btn-color-2 project-btn"
-            onclick="location.href=''">
+            onclick="window.open('http://www.bookflow.online', '_blank', 'noopener,noreferrer')">
             Live Demo
             </button>
           </div>
+          <div class="project-details">
+            <p>Working in a team of four, we designed and produced the mobile app Bookflow in a two week timeframe. Bookflow allows users to search for books by title or genre, add them to a personlised reading list, and mark them as read. The app also supports user-generated reviews, displays book details, and keeps track of reading progress through visual charts, helping users manage their literary adventures effectively.
+            <br>
+            <br>
+            Ruby on Rails, HTML, Sass, Javascript
+            </p>
+          </div>
         </div>
+        <!-- Project two  -->
         <div class="details-container color-container">
           <div class="article-container">
             <img
-            src="/assets/images/project-2.png"
+            src="/assets/images/PR-laptop.png"
+            alt="Project 2"
+            class="project-img-2">
+            <img
+            src="/assets/images/Group2.png"
             alt="Project 2"
             class="project-img">
           </div>
-          <h2 class="project-sub-title project-title">Project Two</h2>
+          <h2 class="project-sub-title project-title">PokeRent</h2>
           <div class="btn-container">
             <button
             class="btn btn-color-2 project-btn"
-            onclick="location.href='github'">
+            onclick="window.open('https://github.com/idgamps99/PokeRent.git', '_blank', 'noopener,noreferrer')">
             GitHub
             </button>
+          </div>
+          <div class="project-details">
+            <p>PokeRent is a vibrant and playful platform that brings the world of Pokémon to life by offering a unique rental marketplace. Leveraging the power of the PokeAPI to dynamically generate Pokémon card images and Mapbox API to integrate interactive maps for rental locations, our team of four successfully developed this engaging application in just one week.
+            <br>
+            <br>
+            Ruby on Rails, HTML, Sass, Javascript
+            </p>
+          </div>
+        </div>
+        <!-- Project Three -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+            src="/assets/images/PP-Display.png"
+            alt="Project 3"
+            class="project-img-2">
+          </div>
+          <h2 class="project-sub-title project-title">PantryPal</h2>
+          <div class="btn-container">
             <button
             class="btn btn-color-2 project-btn"
-            onclick="location.href=''">
-            Live Demo
+            onclick="window.open('https://www.figma.com/design/6kmWLCAgRAAlMALuyHkDSf/Recipes?node-id=0-1&t=TlwZSUraej94EAFQ-1', '_blank', 'noopener,noreferrer')">
+            Figma
             </button>
+          </div>
+          <div class="project-details">
+            <p>PantryPal is an all-in-one recipe and diet guide, with options to track one's meals and connect with other users for social or guidance purposes. One of its highlights is the AI-powered feature, Chef, which crafts personalised meals based on the ingredients available in a user's pantry or refrigerator.
+            I played a pivotal role in bringing this project to life by leading the design process. Collaborating closely with another team member, I created intuitive and visually appealing designs using Figma, ensuring an engaging user experience. My focus was on crafting a seamless interface that enhances usability, leaving a lasting impression on users. While the development team implemented the functionality, my contributions to the app’s overall look and feel were instrumental in shaping PantryPal into the dynamic and user-centric platform it is today.
+            <br>
+            <br>
+            Figma
+            </p>
+          </div>
+        </div>
+        <!-- Project Four  -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+            src="/assets/images/mac-display.png"
+            alt="Project 3"
+            class="project-img-2">
+          </div>
+          <h2 class="project-sub-title project-title">Portfolio</h2>
+          <div class="btn-container">
+            <button
+            class="btn btn-color-2 project-btn"
+            onclick="window.open('https://github.com/mariannec0/portfolio.git', '_blank', 'noopener,noreferrer')">
+            GitHub
+            </button>
+          </div>
+          <div class="project-details">
+            <p>This portfolio was built from scratch using HTML, CSS, and JavaScript, showcasing my skills in front-end development and design. I focused on creating a clean, responsive layout to ensure a seamless user experience across all devices. Throughout the two week development process, I used GitHub for version control to track changes and manage updates. This approach ensured a streamlined workflow and added security to my progress.
+            <br>
+            <br>
+            HTML, CSS, JavaScript
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <img src="/assets/images/arrow.png"
-      alt="arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#projects'">
   </section>
+  <!-- Contact section  -->
   <section id="contact">
     <p class="section__text__p1">
       <h1 class="title">Contact Me</h1>
@@ -165,7 +267,7 @@
           src="/assets/images/email.png"
           alt="Email icon"
           class="icon contact-icon email-icon">
-          <p><a href="mailto:email@gmail.com">myemail.com</a></p>
+          <p><a href="mailto:mariannecooper@hotmail.co.uk">mariannecooper@hotmail.co.uk</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -177,6 +279,7 @@
       </div>
     </p>
   </section>
+  <!-- Footer  -->
   <footer>
     <nav>
       <div class="nav-links-container">
